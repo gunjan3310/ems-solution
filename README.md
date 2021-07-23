@@ -25,5 +25,7 @@ Note:
     Use thymeleaf at least one page if possible 
     
 #Solution
+
 	Soulution has spring boot and Thymeleaf.
+	
 	Spring data JPA and JWT token not implemented.    
