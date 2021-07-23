@@ -35,9 +35,8 @@ public class EmployeeManagerService {
 
     public boolean addEmployee(){
 
-        if(employeeDAO != null)return true;
-
         return false;
     }
+
 
 }

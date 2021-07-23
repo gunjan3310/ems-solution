@@ -1,9 +1,9 @@
 package edigital.nepal.emssolution.models;
 
 public class Designation {
-    int designationId;
-    String designation;
-    String discription;
+    public int designationId;
+    public String designation;
+    public String discription;
 
     public Designation(int designationId, String designation, String discription) {
         this.designationId = designationId;
@@ -34,4 +34,6 @@ public class Designation {
     public void setDiscription(String discription) {
         this.discription = discription;
     }
+
+
 }

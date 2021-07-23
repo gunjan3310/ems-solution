@@ -3,13 +3,13 @@ package edigital.nepal.emssolution.models;
 import java.util.List;
 
 public class Employee {
-    String firstName;
+    public String firstName;
 
-    String lastName;
-    String email;
-    String id;
-    List<Designation> designations;
-    String phoneNumber;
+    public String lastName;
+    public String email;
+    public String id;
+    public List<Designation> designations;
+    public String phoneNumber;
     public Employee(String firstName, String lastName, String email, String id, List<Designation> designations, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -65,5 +65,17 @@ public class Employee {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", id='" + id + '\'' +
+                ", designations=" + designations +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
     }
 }

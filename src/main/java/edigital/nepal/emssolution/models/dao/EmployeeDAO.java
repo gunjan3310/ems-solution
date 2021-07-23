@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Repository
@@ -17,6 +18,8 @@ public class EmployeeDAO {
     public EmployeeDAO(DesignationDAO designationDAO){
         employeeTable = new ArrayList<>();
         designations = new ArrayList<>();
+        int[] designationIds = {};
+        designations = designationDAO.fetchDegnations(designationIds);
         employeeTable.add(
                 new Employee("Gunjan",
                         "Yadav",
@@ -34,9 +37,7 @@ public class EmployeeDAO {
     }
 
 
-    public List<Designation> getDesignations(int[] designationIds){
-       return designationDAO.fetchDegnations(designationIds);
-    }
+
 
 
 }
